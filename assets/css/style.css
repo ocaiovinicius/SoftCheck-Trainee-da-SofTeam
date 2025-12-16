@@ -73,7 +73,7 @@ section {
 }
 
 .home-container {
-    background: url("assets/img/Frame 16.png");
+    background: url("./assets/img/Frame 16.png");
     background-position: center;
     background-size: cover;
 }
