@@ -65,6 +65,7 @@ section {
     margin-top: 1rem;
     display: inline-block;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -72,7 +73,7 @@ section {
 }
 
 .home-container {
-    background: url("../img/Frame 16.png");
+    background: url("Frame 16.png");
     background-position: center;
     background-size: cover;
 }
@@ -105,7 +106,7 @@ section {
     color: #fff;
 }
 
-.about .row {
+.about .line {
     display: flex;
     align-items: flex-start;
     background: #353535;
@@ -114,18 +115,18 @@ section {
     gap: 1rem;
 }
 
-.about .row .content {
+.about .line .content {
     color: #fff;
     margin: 0; 
     padding: 0;
 }
 
-.about .row .content h3 {
+.about .line .content h3 {
     font-size: 2.4rem;
     margin-bottom: .5rem;
 }
 
-.about .row .content p {
+.about .line .content p {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
@@ -138,18 +139,6 @@ section {
     display: block;
 }
 
-@media (max-width: 700px) {
-    .about-row {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-img img {
-        width: 200px;
-    }
-}
-
-/* 🔹 BLOCO ADICIONADO */
 .container {
     width: 100%;
     min-height: 1200px;
@@ -160,9 +149,9 @@ section {
     padding: 10px;
 }
 
-/* To-do App */
+/* Lista de Hábitos */
 .todo-app {
-    width: 100%;
+    width: 90%;
     max-width: 1024px;
     background: #353535;
     margin: 5px auto 20px;
@@ -187,6 +176,7 @@ input {
     background: transparent;
     padding: 10px;
     font-size: 14px;
+    color: #fff;
 }
 
 button {
@@ -196,6 +186,7 @@ button {
     background: #42E9C2;
     color: #fff;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 20px;
 }
@@ -247,4 +238,51 @@ ul li span {
 
 ul li span:hover{
     background: #5a5a5a;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1080px){
+    
+/* todo */
+    section.container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+     .todo-app {
+        width: 80%;            
+        margin: 0 auto;        
+        padding: 30px 30px;    
+    }
+
+    .todo-app .row {
+        width: 100%;          
+        max-width: 700px;    
+        margin: 0 auto 25px;  
+        padding-left: 10px;  
+    }
+
+    .row input {
+        font-size: 1.4rem;
+    }
+
+    .row button {
+        padding: 12px 30px;
+        font-size: 1.4rem;
+    }
+
+/* sobre mim */
+    .line {
+        flex-direction: column;
+    }
+
+    .about .line {
+        display: flex;
+        align-items: center;
+    }    
+
+    .about .line .container-img img{
+        align-content: center;
+    }
+    
+
 }
